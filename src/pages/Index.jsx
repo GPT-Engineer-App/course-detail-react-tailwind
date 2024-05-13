@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Text, Image, VStack, Button, Badge } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, Image, VStack, Button, Badge, Textarea } from "@chakra-ui/react";
 import { FaCalendarAlt, FaUserGraduate } from "react-icons/fa";
 
 const Index = () => {
@@ -24,6 +24,11 @@ const Index = () => {
         <Badge colorScheme="green" p={2} borderRadius="full">
           Bestseller
         </Badge>
+        <Box p={5} mt={5} shadow="md" borderWidth="1px" borderRadius="lg">
+          <Heading mb={2}>Feedback</Heading>
+          <Textarea placeholder="Enter your feedback here..." mb={3} />
+          <Button colorScheme="blue">Submit Feedback</Button>
+        </Box>
       </VStack>
     </Container>
   );
